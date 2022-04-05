@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "anotherarticles",
+  "info": {
+    "name": "Anotherarticle"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name1": {
+      "type": "string"
+    }
+  }
+}
