@@ -12,8 +12,8 @@ const Banner = (props) => {
   const BannerImgHover = styled.div`
     background: linear-gradient(
       0deg,
-      rgba(152, 201, 220, 0.5),
-      rgba(152, 201, 220, 0.5)
+      rgba(93, 125, 138, 0.664),
+      rgba(93, 125, 138, 0.664)
     );
     width: 100%;
     height: 600px;

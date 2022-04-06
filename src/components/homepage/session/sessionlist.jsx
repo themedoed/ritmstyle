@@ -41,7 +41,6 @@ const SessionList = (props) => {
       <SessionItems>
         {info.map((session) => (
           <SessionItem img={session.Img.localFile.url} title={session.Title} />
-
         ))}
       </SessionItems>
     </SessionInner>

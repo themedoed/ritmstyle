@@ -1,14 +1,30 @@
 import * as React from "react";
 import styled from "styled-components";
+import { StaticQuery, graphql, useStaticQuery } from "gatsby";
 import { Link } from "gatsby";
 import Button from "./button";
 
 const Header = (props) => {
+  const { allStrapiHomePage } = useStaticQuery(graphql`
+    query HeaderQuery {
+      allStrapiHomePage {
+        nodes {
+          Logo {
+            localFile {
+              url
+            }
+          }
+        }
+      }
+    }
+  `);
+  let info = allStrapiHomePage.nodes[0];
 
-    
   const HeaderInner = styled.div`
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #808080;
+    padding-bottom: 12px;
   `;
 
   const HeaderLogo = styled.img`
@@ -17,9 +33,9 @@ const Header = (props) => {
     padding: 8px;
     border: 2px solid #162831;
     border-radius: 50%;
-    transition: all .5s;
-    &:hover{
-        border-color: white;
+    transition: all 0.5s;
+    &:hover {
+      border-color: white;
     }
   `;
 
@@ -29,11 +45,14 @@ const Header = (props) => {
     margin-top: 51px;
     font-size: 14px;
     line-height: 13px;
+    font-weight: 400;
     min-width: 655px;
     max-height: 20px;
   `;
 
   const NavLink = styled(Link)`
+    color: white;
+    text-decoration: none;
     border-bottom: 2px solid #162831;
     padding-bottom: 3px;
     transition: all 0.5s;
@@ -49,14 +68,16 @@ const Header = (props) => {
 
   return (
     <HeaderInner>
-      <HeaderLogo src={props.logo} alt="Logo" />
+      <Link to="/">
+        <HeaderLogo src={info.Logo.localFile.url} alt="Logo" />
+      </Link>
       <HeaderNav>
-        <NavLink>Главная</NavLink>
+        <NavLink to="/">Главная</NavLink>
         <NavLink>Сеансы</NavLink>
         <NavLink>Отзывы</NavLink>
         <NavLink>Контакты</NavLink>
-        <NavLink>Новости</NavLink>
-        <NavLink>Обо мне</NavLink>
+        <NavLink to="/news">Новости</NavLink>
+        <NavLink>О нас</NavLink>
         <NavLink>Блог</NavLink>
       </HeaderNav>
       <BookingBtn>

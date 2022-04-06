@@ -7,24 +7,38 @@ const SessionItem = (props) => {
     height: 258px;
     width: 416px;
     border-radius: 10px;
+    z-index: 100;
+    cursor: pointer;
   `;
 
   const SessionImgHover = styled.div`
     background: linear-gradient(
       0deg,
-      rgba(1, 138, 190, 0.5),
-      rgba(1, 138, 190, 0.5)
+      rgba(0, 66, 92, 0.61),
+      rgba(0, 66, 92, 0.61)
     );
     height: 258px;
     width: 416px;
     position: absolute;
     top: 0;
     border-radius: 10px;
-    
+
     &:hover {
       height: 251px;
       border-bottom: 7px solid #018abe;
     }
+  `;
+
+  const SessionDate = styled.div`
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    padding: 5px 12px;
+    background-color: #018abe;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25px;
   `;
 
   const SessionImg = styled.img`
@@ -36,19 +50,21 @@ const SessionItem = (props) => {
 
   const SessionTitle = styled.div`
     position: absolute;
-    bottom: 40px;
+    top: 200px;
     left: 40px;
     font-weight: 700;
     font-size: 24px;
     line-height: 23px;
-    text-align: center;
+    max-width: 336px;
   `;
 
   return (
     <SessionItemInner>
       <SessionImg src={props.img} />
-      <SessionImgHover></SessionImgHover>
-      <SessionTitle>{props.title}</SessionTitle>
+      <SessionImgHover>
+        {props?.date ? <SessionDate>{props.date}</SessionDate> : ""}
+        <SessionTitle>{props.title}</SessionTitle>
+      </SessionImgHover>
     </SessionItemInner>
   );
 };

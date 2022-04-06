@@ -6,6 +6,7 @@ import "normalize.css";
 import Header from "../components/base/header";
 import Banner from "../components/homepage/banner";
 import SessionList from "../components/homepage/session/sessionlist";
+import Footer from "../components/base/footer";
 
 // markup
 const IndexPage = () => {
@@ -56,13 +57,14 @@ const IndexPage = () => {
   return (
     <Page>
       <PageInner>
-        <Header logo={info.Logo.localFile.url} />
+        <Header />
         <Banner
           img={info.Banner.localFile.url}
           slogan={info.Slogan}
           title={info.Title}
         />
         <SessionList />
+      <Footer />
       </PageInner>
     </Page>
   );
