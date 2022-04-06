@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "sessions",
+  "collectionName": "news_items",
   "info": {
-    "name": "Sessions",
+    "name": "NewsItem",
     "description": ""
   },
   "options": {
@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
-      "type": "string"
-    },
     "Img": {
       "model": "file",
       "via": "related",
@@ -26,6 +23,15 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Text": {
+      "type": "richtext"
+    },
+    "Date": {
+      "type": "date"
     }
   }
 }
