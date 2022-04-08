@@ -16,7 +16,7 @@ const NewsList = (props) => {
         }
         nodes {
           id
-          Date
+          Date(formatString: "DD.MM.yyyy")
           Img {
             localFile {
               url
@@ -31,7 +31,7 @@ const NewsList = (props) => {
   let info = allStrapiNewsItem.nodes;
 
   const SessionInner = styled.div`
-    margin-top: 150px;
+    margin-top: 50px;
   `;
 
   const SessionItems = styled.div`

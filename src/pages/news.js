@@ -16,6 +16,7 @@ const NewsPage = () => {
 
   const Page = styled.div`
     background-color: #162831;
+    min-height: 100vh;
   `;
 
   const PageInner = styled.div`

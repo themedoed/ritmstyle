@@ -7,6 +7,14 @@ exports.createPages = async ({ graphql, actions }) => {
         edges {
           node {
             id
+            Date(formatString: "DD.MM.yyyy")
+            Text
+            Title
+            Img {
+              localFile {
+                url
+              }
+            }
           }
         }
       }

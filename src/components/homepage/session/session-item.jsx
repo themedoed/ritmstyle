@@ -33,7 +33,7 @@ const SessionItem = (props) => {
     position: absolute;
     top: 30px;
     left: 40px;
-    padding: 5px 12px;
+    padding: 5px 12px 3px; 
     background-color: #018abe;
     border-radius: 5px;
     font-weight: 700;

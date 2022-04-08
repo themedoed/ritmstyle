@@ -6,6 +6,7 @@ import "normalize.css";
 import Header from "../components/base/header";
 import Banner from "../components/homepage/banner";
 import SessionList from "../components/homepage/session/sessionlist";
+import ReviewsList from "../components/homepage/reviews";
 import Footer from "../components/base/footer";
 
 // markup
@@ -64,6 +65,7 @@ const IndexPage = () => {
           title={info.Title}
         />
         <SessionList />
+        <ReviewsList />
       <Footer />
       </PageInner>
     </Page>
