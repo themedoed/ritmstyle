@@ -1,0 +1,51 @@
+.swiper-slide-active .revies-slide{
+    width: 528px;
+    height: 250px;
+    padding: 50px 54px;
+}
+
+.swiper-slide-active .revies-slide-author{
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.swiper-slide-active .revies-slide-text{
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 20px;
+}
+
+.swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+.swiper{
+    height: 456px;
+    padding-bottom: 50px;
+}
+
+.swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    background: #FFFFFF;
+    opacity: 0.4;
+    border-radius: 3px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #FFFFFF;
+    opacity: 1;
+    border-radius: 3px;
+}

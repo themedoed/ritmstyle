@@ -14,6 +14,7 @@ const Button = (props) => {
       cursor: pointer;
       transition: all .5s;
       border: 2px solid #018ABE;
+      display: inline-block;
 
       &:hover{
           color: #018ABE;

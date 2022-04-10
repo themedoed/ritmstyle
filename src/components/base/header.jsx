@@ -78,7 +78,7 @@ const Header = (props) => {
         <NavLink>Контакты</NavLink>
         <NavLink to="/news">Новости</NavLink>
         <NavLink>О нас</NavLink>
-        <NavLink>Блог</NavLink>
+        <NavLink to="/blog">Блог</NavLink>
       </HeaderNav>
       <BookingBtn>
         <Button text="Записаться на сеанс" />

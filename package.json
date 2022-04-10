@@ -33,6 +33,7 @@
     "react-elastic-carousel": "^0.11.5",
     "react-helmet": "^6.1.0",
     "styled-components": "^5.3.5",
+    "swiper": "^8.1.0",
     "webfontloader": "^1.6.28"
   }
 }

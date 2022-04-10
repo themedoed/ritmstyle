@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---cache-dev-404-page-js",
     "path": "/dev-404-page/",
-    "result": {"data":{"allSiteFunction":{"nodes":[]},"allSitePage":{"nodes":[{"path":"/news/News-item_1"},{"path":"/news/News-item_2"},{"path":"/news/News-item_3"},{"path":"/404/"},{"path":"/404.html"},{"path":"/"},{"path":"/news/"},{"path":"/newsitem/"}]}},"pageContext":{}},
+    "result": {"data":{"allSiteFunction":{"nodes":[]},"allSitePage":{"nodes":[{"path":"/news/News-item_1"},{"path":"/news/News-item_2"},{"path":"/news/News-item_3"},{"path":"/blog/Blogs_1"},{"path":"/blog/Blogs_2"},{"path":"/blog/Blogs_3"},{"path":"/404/"},{"path":"/404.html"},{"path":"/blog/"},{"path":"/blogitem/"},{"path":"/"},{"path":"/news/"},{"path":"/newsitem/"}]}},"pageContext":{}},
     "staticQueryHashes": []}

@@ -6,8 +6,9 @@ import "normalize.css";
 import Header from "../components/base/header";
 import Banner from "../components/homepage/banner";
 import SessionList from "../components/homepage/session/sessionlist";
-import ReviewsList from "../components/homepage/reviews";
 import Footer from "../components/base/footer";
+import SwiperSection from "../components/homepage/swiper/swiper";
+import AboutList from "../components/homepage/about/aboutlist";
 
 // markup
 const IndexPage = () => {
@@ -41,14 +42,11 @@ const IndexPage = () => {
 
   const Page = styled.div`
     background-color: #162831;
+    font-family: "El Messiri";
+    color: white;
   `;
 
   const PageInner = styled.div`
-    font-family: "El Messiri";
-    color: white;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 35px;
     max-width: 1336px;
     padding: 0 20px;
     margin: 0 auto;
@@ -65,8 +63,11 @@ const IndexPage = () => {
           title={info.Title}
         />
         <SessionList />
-        <ReviewsList />
-      <Footer />
+      </PageInner>
+      <SwiperSection />
+      <PageInner>
+        <AboutList />
+        <Footer />
       </PageInner>
     </Page>
   );

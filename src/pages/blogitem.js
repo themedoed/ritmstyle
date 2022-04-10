@@ -6,7 +6,7 @@ import Header from "../components/base/header";
 import Title from "../components/base/title";
 import Footer from "../components/base/footer";
 
-const NewsItemPage = (props) => {
+const BlogItemPage = (props) => {
   let info = props.pageContext.node;
 
   WebFont.load({
@@ -51,10 +51,10 @@ const NewsItemPage = (props) => {
     font-size: 16px;
     line-height: 22px;
     margin-top: 23px;
-    min-height: 394px;
   `;
 
   const NewsText = styled.div`
+   
   `;
 
   const NewsTitle = styled.div`
@@ -95,4 +95,4 @@ const NewsItemPage = (props) => {
   );
 };
 
-export default NewsItemPage;
+export default BlogItemPage;
